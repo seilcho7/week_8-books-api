@@ -9,7 +9,7 @@ const {
     retrieveAll,
     retrieveOne,
     update,
-    deleteOne
+    deleteOne,
 } = require('../controllers/books');
 
 booksRoutes.post('/', create);

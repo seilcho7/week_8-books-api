@@ -23,5 +23,5 @@ module.exports = {
     retrieveAll,
     retrieveOne,
     update,
-    deleteOne
+    deleteOne,
 };
