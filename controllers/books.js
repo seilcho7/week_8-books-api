@@ -1,13 +1,21 @@
 function create(req, res) {
-    res.json({ message: "Created"});
+    res.json({ message: "Created" });
 }
 
 function retrieveAll(req, res) {
-    res.json({ message: "Retrieved all"});
+    res.render('books', { 
+        locals: {
+            message: "Retrieved all"
+        }
+    });
 }
 
 function retrieveOne(req, res) {
-    res.json({ message: `Retrieved ${req.params.id}`});
+    res.render('books', { 
+        locals: {
+            message: `Retrieved ${req.params.id}`
+        }
+    });
 }
 
 function update(req, res) {
